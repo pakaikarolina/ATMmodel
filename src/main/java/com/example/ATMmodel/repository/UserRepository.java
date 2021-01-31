@@ -9,4 +9,7 @@ import org.springframework.stereotype.Repository;
 public interface UserRepository extends CrudRepository<User, String> {
 
     public abstract User findByAccountNumberAndPin(long accountNumber, int pin);
+
+    public abstract User findByAccountNumber(long accountNumber);
+
 }
