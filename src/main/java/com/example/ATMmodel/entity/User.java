@@ -23,7 +23,7 @@ public class User {
     @GenericGenerator(name="system-uuid", strategy = "uuid")
     private String id;
     private long accountNumber;
-    private int pin;
+    private String pin;
     private String name;
     private int balance;
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)

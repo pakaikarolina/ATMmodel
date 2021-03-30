@@ -4,6 +4,6 @@ import lombok.Data;
 
 @Data
 public class LogInRequest {
-    private long accountNumber;
-    private int pin;
+    private String accountNumber;
+    private String pin;
 }
